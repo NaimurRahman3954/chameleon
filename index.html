@@ -16,9 +16,7 @@
          height: 80vh;
       }
 
-      h3{
-         /* background-color: #fffdd0; */
-         /* background-color: grey; */
+      /* h3{
          padding: 20px;
          border: 0.1px solid grey;
          border-radius: 5px;
@@ -32,7 +30,7 @@
       .color{
          color: white;
          border: 0.1px solid #fffdd0;
-      }
+      } */
 
 
       .button-deck{
@@ -79,7 +77,6 @@
       }
 
       .opacity{
-         /* transition: opacity ; */
          opacity: 30%;
          transition-delay: 1s;
          transition-duration: 1s;
@@ -87,7 +84,7 @@
    </style>
 </head>
 <body>
-   <h3 id="text">Click any of the following button to change the background color. <br> Our little Chameleon will hide itself with the background after a second</h3>
+   <!-- <h3 id="text">Click any of the following button to change the background color. <br> Our little Chameleon will hide itself with the background after a second</h3> -->
    <div class="button-deck">
       <button class="button" id="red">Red</button>
       <button class="button" id="green">Green</button>
@@ -108,24 +105,21 @@
          //NEED to figure out a way to refresh the page before the following commands executes.
          document.body.style.backgroundColor = "#FF033E";
          document.getElementById('image').className = "opacity";
-         document.getElementById('text').className = "color";
+         // document.getElementById('text').className = "color";
       })
       document.getElementById("green").addEventListener('click', function(){
-         // location.reload();
          document.body.style.backgroundColor = "#32de84";
-         document.getElementById('image').className = "opacity";
+         // document.getElementById('image').className = "opacity";
       })
       document.getElementById("blue").addEventListener('click', function(){
-         // location.reload();
          document.body.style.backgroundColor = "#2a52be";
          document.getElementById('image').className = "opacity";
-         document.getElementById('text').className = "color";
+         // document.getElementById('text').className = "color";
       })
       document.getElementById("purple").addEventListener('click', function(){
-         // location.reload();
          document.body.style.backgroundColor = "purple";
          document.getElementById('image').className = "opacity";
-         document.getElementById('text').className = "color";
+         // document.getElementById('text').className = "color";
       })
    </script>
 </body>
